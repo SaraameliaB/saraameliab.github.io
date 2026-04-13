@@ -1,3 +1,20 @@
+minimal_mistakes_skin: "dark" # optional: try "air", "contrast", etc.
+locale: "en-US"
+
+# Enable author profile in sidebar
+author:
+  name: Sara Amelia Bilic
+  avatar: "/assets/images/profile.jpg" # add this image later
+  bio: "Final year cybersecurity student at HOWEST University of Applied Sciences!"
+  location: "Lede, Belgium"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/SaraameliaB"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sara-amelia-bilic-586ba3353/"
+
 # =============
 # Site Settings
 # =============
@@ -8,27 +25,31 @@ description: # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://saraameliab.github.io/"
 
+
+
 # =============
 # Author information
 # =============
-author:
-  name: Sara Amelia Bilic
-  bio: "Final year cybersecurity student at HOWEST University of Applied Sciences!"
-  email: "sara_bilic@outlook.com"
-  location: "Lede, Belgium"
-  links:
-    - label: "GitHub"
-      url: "https://github.com/SaraameliaB"
-    - label: "LinkedIn"
-      url: "https://www.linkedin.com/in/sara-amelia-bilic-586ba3353/"
+#author:
+#  name: Sara Amelia Bilic
+#  bio: "Final year cybersecurity student at HOWEST University of Applied Sciences!"
+#  email: "sara_bilic@outlook.com"
+#  location: "Lede, Belgium"
+#  links:
+#    - label: "GitHub"
+#      url: "https://github.com/SaraameliaB"
+#    - label: "LinkedIn"
+#      url: "https://www.linkedin.com/in/sara-amelia-bilic-586ba3353/"
 
 # =============
 # Build settings
 # =============
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
 plugins:
   - jekyll-feed
   - jekyll-paginate # enables blog pagination
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # =============
 # Pagination settings
